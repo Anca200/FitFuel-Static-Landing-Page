@@ -1,10 +1,13 @@
-// Nav
+AOS.init(); //AOS Animations
+
+//Nav
 const hamburgerButton = document.querySelector("#hamburger");
 const navBar = document.querySelector("#navBar");
 const icon = hamburgerButton.querySelector("i");
+const navLinks = document.querySelectorAll(".nav-link"); // Selecting all nav links
 
 function toggleMenu() {
-    // Check if the sidebar is already open
+    // Check if the menu is open
     if (navBar.classList.contains('left-0')) {
         // Hide Side Nav
         navBar.classList.add("left-[-250px]", "opacity-0", "pointer-events-none");
@@ -14,8 +17,10 @@ function toggleMenu() {
         icon.classList.remove("fa-xmark");
         icon.classList.add("fa-bars");
 
-        // Allow body to scroll
-        document.body.style.overflow = "auto";
+        // Re-enable scrolling only on mobile view
+        if (window.innerWidth < 1024) {
+            document.body.style.overflow = "auto";
+        }
     } else {
         // Show Side Nav
         navBar.classList.add("left-0", "opacity-100", "pointer-events-auto");
@@ -25,14 +30,32 @@ function toggleMenu() {
         icon.classList.remove("fa-bars");
         icon.classList.add("fa-xmark");
 
-        // Prevent body from scrolling
-        document.body.style.overflow = "hidden";
+        // Disable scrolling only on mobile view
+        if (window.innerWidth < 1024) {
+            document.body.style.overflow = "hidden";
+        }
     }
 }
 
 // Add event listener to the hamburger button
 hamburgerButton.addEventListener("click", toggleMenu);
 
+// Add event listener to each nav link to close the menu when clicked (only for mobile view)
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        // Check if the navBar is visible (only on mobile)
+        if (window.innerWidth < 1024 && navBar.classList.contains('left-0')) {
+            toggleMenu();
+        }
+    });
+});
+
+// Reset body scroll on window resize (for responsive behavior)
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 1024) {
+        document.body.style.overflow = "auto";  // Always allow scroll on desktop
+    }
+});
 
   //FAQ
 

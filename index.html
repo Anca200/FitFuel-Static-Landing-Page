@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png"> <!--Favicon-->
     <title>FitFuel</title> <!--Title-->
     <link rel="stylesheet" href="./style.css"> <!--CSS File-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--AOS Animations-->
   </head>
 
   <body>
@@ -20,37 +21,38 @@
     <!-- Left Side -->
     <div class="w-full  h-auto lg:h-screen lg:w-[60%] bg-white  flex relative border-b-[5px] border-b-green-200 ">
 
-        <!--Nav-->
-        <nav class="absolute top-0 left-0 w-full h-[80px] flex justify-between p-4 items-center">
+      <!--Nav-->
+<nav class="absolute top-0 left-0 w-full h-[80px] flex justify-between p-4 items-center">
 
-            <!--Logo-->
-            <div class="text-color1 font-playfair text-[2rem] font-bold"> 
-                <h2 >Fit<span class="text-color2">Fuel</span></h2>
-            </div>
+  <!--Logo-->
+  <div class="text-color1 font-playfair text-[2rem] font-bold"> 
+      <h2>Fit<span class="text-color2">Fuel</span></h2>
+  </div>
 
-            <!--Nav Links-->
-            <div class="fixed top-0 left-[-250px] w-[250px] h-screen bg-color1  z-20  lg:static lg:h-auto lg:w-auto lg:left-0 lg:bg-inherit transition-all duration-300 ease-in-out " id="navBar">
+  <!--Nav Links-->
+  <div class="fixed top-0 left-[-250px] w-[250px] h-screen bg-color1 z-20 lg:static lg:h-auto lg:w-auto lg:left-0 lg:bg-inherit transition-all duration-300 ease-in-out" id="navBar">
+      <ul class="flex flex-col gap-[50px] text-white lg:text-gray-500 items-center mt-[150px] text-xl font-semibold font-patrick_hand lg:flex-row cursor-pointer lg:mt-0 lg:gap-[30px]">
+          <a href="#services" class="nav-link"><li class="hover:text-color2">Services</li></a>
+          <a href="#about" class="nav-link"><li class="hover:text-color2">About</li></a>
+          <a href="#recipes" class="nav-link"><li class="hover:text-color2">Recipes</li></a>
+          <a href="#plans" class="nav-link"><li class="hover:text-color2">Plans</li></a>
+          <a href="#reviews" class="nav-link"><li class="hover:text-color2">Reviews</li></a>
+          <a href="#faq" class="nav-link"><li class="hover:text-color2">Faq</li></a>
+          <a href="#contact" class="nav-link"><li class="hover:text-color2">Contact</li></a>
+      </ul>
+  </div>
 
-                <ul class="flex flex-col gap-[50px] text-white lg:text-gray-500  items-center mt-[150px] text-xl font-semibold font-patrick_hand lg:flex-row cursor-pointer  lg:mt-0 lg:gap-[30px]">
-
-                    <a href="#services"><li class="hover:text-color2">Services</li></a>
-                   <a href="#about"> <li class="hover:text-color2">About</li></a>
-                    <a href="#recipes"><li class="hover:text-color2">Recipes</li></a>
-                    <a href="#plans"><li class="hover:text-color2">Plans</li></a>
-                   <a href="#reviews"> <li class="hover:text-color2">Reviews</li></a>
-                    <a href="#faq"><li class="hover:text-color2">Faq</li></a>
-                    <a href="#contact"><li class="hover:text-color2">Contact</li></a>
-                </ul>
-            </div>
-
-            <!--Nav Menu-->
-            <div id="hamburger" class=" text-[1.5rem] text-color1 lg:hidden "> 
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
-
+  <!--Nav Menu-->
+  <div id="hamburger" class="text-[1.5rem] text-color1 lg:hidden"> 
+      <i class="fa-solid fa-bars"></i>
+  </div>
+</nav>
         <!--Hero Text-->
-        <div class="w-full h-fit mt-[120px] p-4 lg:w-[500px] lg:mx-auto lg:mt-[200px] ">
+        <div class="w-full h-fit mt-[120px] p-4 lg:w-[500px] lg:mx-auto lg:mt-[200px]"
+        data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="1000">
             <h1 class="text-gray-500 text-center text-[2rem] font-playfair mb-[10px] lg:text-[2.3rem]">Discover Your Path to Wellness</h1>
             <h2 class="text-color2 text-center text-[2rem] mb-[20px] font-semibold lg:text-[1.5rem]  font-dancing_script">Personalized Nutrition Plans <br>Tailored Just for You</h2>
                 <p class="text-color1 font-medium text-[1.1rem] relative mb-[50px] lg:mb-0 lg:leading-8 lg:mt-[50px] font-patrick_hand">Unlock a healthier, happier you with our expert nutrition plans. Whether boosting energy, managing weight, or improving wellness, we tailor your plan to fit your unique lifestyle. </p>
@@ -65,7 +67,11 @@
     <!-- Right Side -->
     <div class="w-full h-auto lg:h-full lg:w-[40%] bg-green-200 p-8 flex items-center justify-center relative z-10">
         <!-- Main Image -->
-        <img src="./assets/heroImage.png" alt="Picture of a vegetable dish" class="w-[70%] lg:w-auto lg:absolute lg:left-[-150px]">
+        <img src="./assets/heroImage.png" alt="Picture of a vegetable dish" class="w-[70%] lg:w-auto lg:absolute lg:left-[-150px]"
+        data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="1000">
     
         <img src="./assets/leaf3.png" alt="Image of a leaf" class="absolute top-[10px] right-[10px] w-[60px] lg:top-[50px] lg:right-[100px] lg:w-[100px]">
         <img src="./assets/leaf2.png" alt="Image of a leaf" class="absolute right-[10px] bottom-[10px] w-[60px] lg:w-[100px] lg:right-[100px] lg:bottom-[100px]">
@@ -136,21 +142,21 @@
 
             <div class=" w-[90%] lg:w-[400px] h-[250px]  bg-green-100  rounded-[20px] drop-shadow-xl content-center text-center border-t-[5px] border-t-green-200">
                 <h3 class="mb-[30px] text-[1.4rem]  text-green-900 font-semibold ">Personalized Nutrition Plans</h3>
-                <p class="mb-[10px] w-[35ch] mx-auto  font-lora leading-7 text-black  text-[1.2rem]">Custom meal plans tailored to individual dietary needs, preferences, and health goals.</p>
+                <p class="mb-[10px] w-[90%] lg:w-[35ch] mx-auto  font-lora leading-7 text-black  text-[1.2rem]">Custom meal plans tailored to individual dietary needs, preferences, and health goals.</p>
                 <img src="./assets/services_Icon1.png" alt="Icon" class="mx-auto w-[60px]">
             </div>
 
             <!--Item 2-->
             <div class=" w-[90%] lg:w-[400px] h-[250px]  bg-green-100  rounded-[20px] drop-shadow-xl content-center text-center border-t-[5px] border-t-green-200">
                 <h3 class="mb-[30px] text-[1.4rem]  text-green-900 font-semibold ">Weight Management</h3>
-                <p class="mb-[10px] w-[35ch] mx-auto  font-lora leading-7 text-black  text-[1.2rem]">Programs focused on helping clients lose, gain, or maintain weight through balanced nutrition.</p>
+                <p class="mb-[10px] w-[90%] lg:w-[35ch] mx-auto  font-lora leading-7 text-black  text-[1.2rem]">Programs focused on helping clients lose, gain, or maintain weight through balanced nutrition.</p>
                 <img src="./assets/services_Icon2.png" alt="Icon" class="mx-auto w-[60px]">
             </div>
 
             <!--Item 3-->
             <div class=" w-[90%] lg:w-[400px] h-[250px]  bg-green-100  rounded-[20px] drop-shadow-xl content-center text-center border-t-[5px] border-t-green-200">
                 <h3 class="mb-[30px] text-[1.4rem] text-green-900 font-semibold ">Sports Nutrition</h3>
-                <p class="mb-[10px] w-[35ch] mx-auto  font-lora leading-7 text-black  text-[1.2rem]">Specialized guidance for athletes and active individuals to optimize performance and recovery.</p>
+                <p class="mb-[10px] w-[90%] lg:w-[35ch] mx-auto  font-lora leading-7 text-black  text-[1.2rem]">Specialized guidance for athletes and active individuals to optimize performance and recovery.</p>
                 <img src="./assets/services_Icon3.png" alt="Icon" class="mx-auto w-[60px]">
             </div>
         </div>
@@ -590,7 +596,9 @@
 </footer>
 
     <script type="module" src="./main.js"></script> <!--JavaScript-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--AOS Animations-->
     <script src="https://kit.fontawesome.com/1b757b43bb.js" crossorigin="anonymous"></script> <!--Font Awesome-->
+    
 
   </body>
 </html>
