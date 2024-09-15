@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Anca"> <!--Author-->
+    <meta name="description" content="  Welcome to your go-to source for personalized nutrition plans, healthy recipes, and expert tips to fuel your body and mind. Whether you're looking to lose weight, gain muscle, or simply eat better, Fit Fuel empowers you to achieve your goals with balanced, delicious, and nutrient-rich meals"> <!--Landing Page Description-->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png"> <!--Favicon-->
+    <title>FitFuel</title> <!--Title-->
+    <link rel="stylesheet" href="./style.css"> <!--CSS File-->
+  </head>
+
+  <body>
+
+   <!--Hero Section-->
+
+   <header class="w-full h-auto lg:h-screen flex flex-col lg:flex-row">
+
+    <!-- Left Side -->
+    <div class="w-full  h-auto lg:h-screen lg:w-[60%] bg-white  flex relative border-b-[5px] border-b-green-200 ">
+
+        <!--Nav-->
+        <nav class="absolute top-0 left-0 w-full h-[80px] flex justify-between p-4 items-center">
+
+            <!--Logo-->
+            <div class="text-color1 font-playfair text-[2rem] font-bold"> 
+                <h2 >Fit<span class="text-color2">Fuel</span></h2>
+            </div>
+
+            <!--Nav Links-->
+            <div class="fixed top-0 left-[-250px] w-[250px] h-screen bg-color1  z-20  lg:static lg:h-auto lg:w-auto lg:left-0 lg:bg-inherit transition-all duration-300 ease-in-out " id="navBar">
+
+                <ul class="flex flex-col gap-[50px] text-white lg:text-gray-500  items-center mt-[150px] text-xl font-semibold font-patrick_hand lg:flex-row cursor-pointer  lg:mt-0 lg:gap-[30px]">
+
+                    <a href="#services"><li class="hover:text-color2">Services</li></a>
+                   <a href="#about"> <li class="hover:text-color2">About</li></a>
+                    <a href="#recipes"><li class="hover:text-color2">Recipes</li></a>
+                    <a href="#plans"><li class="hover:text-color2">Plans</li></a>
+                   <a href="#reviews"> <li class="hover:text-color2">Reviews</li></a>
+                    <a href="#faq"><li class="hover:text-color2">Faq</li></a>
+                    <a href="#contact"><li class="hover:text-color2">Contact</li></a>
+                </ul>
+            </div>
+
+            <!--Nav Menu-->
+            <div id="hamburger" class=" text-[1.5rem] text-color1 lg:hidden "> 
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <!--Hero Text-->
+        <div class="w-full h-fit mt-[120px] p-4 lg:w-[500px] lg:mx-auto lg:mt-[200px] ">
+            <h1 class="text-gray-500 text-center text-[2rem] font-playfair mb-[10px] lg:text-[2.3rem]">Discover Your Path to Wellness</h1>
+            <h2 class="text-color2 text-center text-[2rem] mb-[20px] font-semibold lg:text-[1.5rem]  font-dancing_script">Personalized Nutrition Plans <br>Tailored Just for You</h2>
+                <p class="text-color1 font-medium text-[1.1rem] relative mb-[50px] lg:mb-0 lg:leading-8 lg:mt-[50px] font-patrick_hand">Unlock a healthier, happier you with our expert nutrition plans. Whether boosting energy, managing weight, or improving wellness, we tailor your plan to fit your unique lifestyle. </p>
+            <div class="w-full flex justify-center mt-[20px]"> <!--Button-->
+                <a href="#plans"><button class="w-[150px] bg-gray-500 text-white px-4 py-2 rounded rounded-br-3xl hover:scale-110  transition-transform duration-30 cursor-pointer font-patrick_hand">Explore Our Plan</button></a>
+            </div>
+        </div>
+
+        <img src="../assets/leaf1.png"  alt="Image of a leaf" class="absolute bottom-0 w-[50px] lg:-bottom-[-50px]"> 
+    </div>
+
+    <!-- Right Side -->
+    <div class="w-full h-auto lg:h-full lg:w-[40%] bg-green-200 p-8 flex items-center justify-center relative z-10">
+        <!-- Main Image -->
+        <img src="../assets/heroImage.png" alt="Picture of a vegetable dish" class="w-[70%] lg:w-auto lg:absolute lg:left-[-150px]">
+    
+        <img src="../assets/leaf3.png" alt="Image of a leaf" class="absolute top-[10px] right-[10px] w-[60px] lg:top-[50px] lg:right-[100px] lg:w-[100px]">
+        <img src="../assets/leaf2.png" alt="Image of a leaf" class="absolute right-[10px] bottom-[10px] w-[60px] lg:w-[100px] lg:right-[100px] lg:bottom-[100px]">
+    </div>
+</header>
+
+<!--Main Section-->
+
+<main> 
+
+<!--Decoration-->
+
+<div class="w-full h-[100px] mt-[150px] mb-[100px] ">
+  <img src="./assets/decoration_Image.png" alt="Decoration Image" class="w-[100px] mx-auto">
+</div>
+
+<!--Shipping Section-->
+
+<section class="w-full  min-h-[350px] mb-[80px]">
+  <div class="grid grid-cols-2 place-items-center lg:flex lg:flex-row justify-center gap-[10px] lg:gap-[100px]">
+    <div class="flex flex-col gap-[20px]">
+      <div class="w-[100px] h-[100px] shadow-custom-light rounded-[50px] content-center ">
+        <img src="./assets/shipping_Icon1.png" alt="Shipping Icon" class="w-[50%] object-cover mx-auto">
+      </div>
+      <p class="font-patrick_hand font-semibold">Fast Delivery</p>
+    </div>
+
+    <div class="flex flex-col gap-[20px]">
+      <div class="w-[100px] h-[100px] shadow-custom-light rounded-[50px] content-center ">
+        <img src="./assets/shipping_Icon2.png" alt="Shipping Icon" class="w-[50%] object-cover mx-auto">
+      </div>
+      <p class="font-patrick_hand font-semibold">Secure Payment</p>
+    </div>
+
+    <div class="flex flex-col gap-[20px]">
+      <div class="w-[100px] h-[100px] shadow-custom-light rounded-[50px]">
+        <div class="w-[100px] h-[100px] shadow-custom-light rounded-[50px] content-center ">
+          <img src="./assets/shipping_Icon3.png" alt="Shipping Icon" class="w-[50%] object-cover mx-auto">
+        </div>
+
+      </div>
+      <p class="font-patrick_hand font-semibold">Order Tracking</p>
+    </div>
+
+    <div class="flex flex-col gap-[20px]">
+      <div class="w-[100px] h-[100px] shadow-custom-light rounded-[50px]">
+        <div class="w-[100px] h-[100px] shadow-custom-light rounded-[50px] content-center ">
+          <img src="./assets/shipping_Icon4.png" alt="Shipping Icon" class="w-[50%] object-cover mx-auto">
+        </div>
+
+      </div>
+      <p class="font-patrick_hand font-semibold">24/7 Support</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!--Services Section-->
+
+    <section class="w-full h-auto mb-[200px]" id="services">
+        <h2 class="text-[2rem] lg:text-[3rem]  text-center font-dancing_script text-shadow-custom font-bold mb-[50px] text-gray-800 ">What We Offer</h2> <!--Title-->
+
+      
+        <div class="w-full h-auto flex flex-col items-center lg:flex-row justify-center gap-[50px] font-patrick_hand">
+            
+              <!--Item 1-->
+
+            <div class=" w-[90%] lg:w-[400px] h-[250px]  bg-green-100  rounded-[20px] drop-shadow-xl content-center text-center border-t-[5px] border-t-green-200">
+                <h3 class="mb-[30px] text-[1.4rem]  text-green-900 font-semibold ">Personalized Nutrition Plans</h3>
+                <p class="mb-[10px] w-[35ch] mx-auto  font-lora leading-7 text-black  text-[1.2rem]">Custom meal plans tailored to individual dietary needs, preferences, and health goals.</p>
+                <img src="./assets/services_Icon1.png" alt="Icon" class="mx-auto w-[60px]">
+            </div>
+
+            <!--Item 2-->
+            <div class=" w-[90%] lg:w-[400px] h-[250px]  bg-green-100  rounded-[20px] drop-shadow-xl content-center text-center border-t-[5px] border-t-green-200">
+                <h3 class="mb-[30px] text-[1.4rem]  text-green-900 font-semibold ">Weight Management</h3>
+                <p class="mb-[10px] w-[35ch] mx-auto  font-lora leading-7 text-black  text-[1.2rem]">Programs focused on helping clients lose, gain, or maintain weight through balanced nutrition.</p>
+                <img src="./assets/services_Icon2.png" alt="Icon" class="mx-auto w-[60px]">
+            </div>
+
+            <!--Item 3-->
+            <div class=" w-[90%] lg:w-[400px] h-[250px]  bg-green-100  rounded-[20px] drop-shadow-xl content-center text-center border-t-[5px] border-t-green-200">
+                <h3 class="mb-[30px] text-[1.4rem] text-green-900 font-semibold ">Sports Nutrition</h3>
+                <p class="mb-[10px] w-[35ch] mx-auto  font-lora leading-7 text-black  text-[1.2rem]">Specialized guidance for athletes and active individuals to optimize performance and recovery.</p>
+                <img src="./assets/services_Icon3.png" alt="Icon" class="mx-auto w-[60px]">
+            </div>
+        </div>
+    </section>
+
+    <!--About Us Section-->
+
+    <section class="w-full min-h-screen p-8" id="about">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[100px] items-center">
+        
+        <!-- Text Section -->
+        <div class="w-full max-w-lg">
+          <div class="lg:ml-[100px]">
+            <h2 class="text-[3rem] font-bold mb-4 font-dancing_script">About Us</h2>
+            <p class="mb-4 font-patrick_hand">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti molestiae natus ad veritatis enim fugiat aut totam id eaque. Quisquam aliquid nobis eos libero. Repellendus laudantium assumenda nobis ea cupiditate.</p>
+            <p class="mb-6 font-patrick_hand">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quas laboriosam nobis sit qui. Aperiam impedit quia nulla ipsam eius vero eaque, omnis laboriosam magnam nesciunt iusto eligendi rem aliquam.</p>
+            <button class="w-[150px] bg-gray-500 text-white px-4 py-2 rounded rounded-br-3xl hover:scale-110  transition-transform duration-30 cursor-pointer font-patrick_hand">More</button>
+          </div>
+        </div>
+    
+        <!-- Images Section -->
+        <div class="grid grid-cols-2 gap-4 items-center justify-center">
+          <div class="flex flex-col gap-4">
+            <img src="./assets/about_Image1.jpg" alt="Dish Image" class="w-full h-[250px] object-cover rounded-[10px]">
+            <img src="./assets/about_Image2.jpg" alt="Dsih Image" class="w-full h-[250px] object-cover rounded-[10px]">
+          </div>
+          <div class="mt-12">
+            <img src="./assets/about_Image3.jpeg" alt="Image of vegetable" class="w-full h-[500px] object-cover rounded-[10px]">
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!--Decoration-->
+
+<div class="w-full h-[100px] ">
+  <img src="./assets/decoration_Image.png" alt="Decoration Image" class="w-[100px] mx-auto">
+</div>
+
+<!--Recipes Section-->
+
+<section class="w-full h-auto content-center" id="recipes">
+<div class="flex  flex-col lg:flex-row justify-around items-center mt-[50px]">
+
+  <div class=" w-full  lg:w-[500px] lg:h-[500px] text-[2rem]"> <!--Main Image-->
+    <img src="./assets/recipes_salad.png" alt="Image of a dish" class="object-cover w-[inherit] h-[inherit] drop-shadow-2xl">
+  </div>
+
+  <div class=" w-[90%] lg:w-[500px] h-auto ">
+    <h2 class="text-[2.5rem] text-center mb-[20px] font-dancing_script font-bold ">Mediterranean Chickpea Salad</h2> <!--Title-->
+
+    <p class="mb-[20px] leading-7  font-patrick_hand"> Mediterranean Chickpea Salad is a vibrant and refreshing salad bursting with Mediterranean flavors. It's packed with protein-rich chickpeas, crunchy vegetables, and a zesty lemon-herb dressing. Perfect as a light lunch or a side dish for any meal.
+    </p>
+
+    <ul class="mb-[20px] leading-7 font-patrick_hand">
+      <li>1 can (15 oz) chickpeas, drained and rinsed</li>
+      <li>1 cup cherry tomatoes, halved</li>
+      <li>1 cucumber, diced</li>
+      <li>1/2 red onion, finely chopped</li>
+      <li>1/2 cup Kalamata olives, pitted and sliced</li>
+      <li>1/2 cup feta cheese, crumbled</li>
+      <li>1/4 cup fresh parsley, chopped</li>
+    </ul>
+
+    <p class="text-center text-[1.4rem] text-orange-400"> <!--Star Rating-->
+      <i class="fa-solid fa-star"></i> 
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </p>
+  </div>
+</div>
+
+    <h2 class="text-center font-dancing_script text-[2rem] mb-[20px] font-bold">Other Recipes</h2>
+
+    <div class="flex flex-col lg:flex-row justify-center gap-[50px]  items-center">
+      <img src="./assets/recipe_1.jpg" alt="Image of a dish" class="w-[200px] object-cover rounded-[10px] hover:scale-110  transition-transform duration-30 cursor-pointer ">
+      <img src="./assets/recipe_2.jpeg" alt="Image of a dish" class="w-[200px] object-cover rounded-[10px] hover:scale-110  transition-transform duration-30 cursor-pointer">
+      <img src="./assets/recipe_3.jpg" alt="Image of a dish" class="w-[200px] object-cover rounded-[10px] hover:scale-110  transition-transform duration-30 cursor-pointer">
+    </div>
+  </section>
+
+   <!--App Section-->
+
+   <section class="w-full h-auto content-center mt-[100px]">
+    <div class=" w-full h-auto mt-[50px] flex flex-col lg:flex-row justify-center items-center bg-green-100 gap-0 lg:gap-[100px]">
+
+      <div class="w-full lg:w-[500px] h-auto p-4"> <!--Left Side-->
+        
+        <h2 class="text-[3rem] mb-[20px] font-playfair text-shadow-custom text-center lg:text-left">Download Our App</h2>
+        <p class="leading-7 mb-[50px] font-patrick_hand">Download our app to access personalized meal plans, track your nutrition goals, and get daily health tips — all at your fingertips. Whether you're at home or on the go, let our app guide you to a healthier lifestyle. Stay connected, stay healthy!
+      </p>
+
+<div class="flex flex-col  lg:flex-row items-center"> <!--Buttons-->
+  <img src="./assets/androidButton.png" alt="Image of android button" class="w-[200px] h-[75px] cursor-pointer hover:scale-110  transition-transform duration-30 ">
+  <img src="./assets/iphoneButton.png" alt="Image of iphone button" class="w-[190px] h-[70px] hover:scale-110  transition-transform duration-30 cursor-pointer  ">
+</div>
+      </div>
+
+      <div class="w-full lg:w-[500px]"> <!--Right Side-->
+        <img src="./assets/mobile.png" alt="Image of mobile app" class="w-[inherit] object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!--Decoration-->
+
+  <div class="w-full h-auto mt-[100px] ">
+    <img src="./assets/decoration_Image2.jpg" alt="Decoration Image" class="w-[90%] lg:w-[800px] mx-auto">
+  </div>
+
+  <!--Pricing Plans-->
+
+  <section class="w-full min-h-screen" id="plans">
+    <h2 class="text-center font-dancing_script text-[3rem] mt-[100px] mb-[100px] font-bold text-gray-800 ">Limited Pricing Plans</h2> <!--Title-->
+
+    <div class="w-full h-full flex flex-col lg:flex-row justify-center items-center gap-6 mt-8 px-4">
+
+      <!-- Item 1 -->
+      <div class="w-full h-auto lg:w-[300px] lg:h-auto rounded-[20px]  p-6 flex flex-col items-center shadow-custom-light">
+        <h3 class="text-center text-[2rem] font-bold font-dancing_script mt-4">Limited</h3>
+        <p class="text-center font-patrick_hand text-gray-600 mt-2"><span class="font-bold">$2</span> / month per use</p>
+
+        <button class="mt-6 border-2 border-gray-200 rounded-full py-2 px-4 text-color2 font-patrick_hand font-semibold">
+          Available for a month
+        </button>
+
+        <div class="flex items-center gap-3 mt-6 w-full">
+          <i class="fa-solid fa-angle-right text-color1"></i>
+          <p>Access to basic nutrition guides</p>
+        </div>
+        <div class="flex items-center gap-3 mt-4 w-full">
+          <i class="fa-solid fa-angle-right text-color1"></i>
+          <p>Limited meal suggestions</p>
+        </div>
+        <div class="flex items-center gap-3 mt-4 w-full">
+          <i class="fa-solid fa-angle-right text-color1"></i>
+          <p>No personal support</p>
+        </div>
+
+        <button class="w-[150px] bg-gray-500 text-white px-4 py-2 rounded rounded-br-3xl hover:scale-110  transition-transform duration-30 cursor-pointer font-patrick_hand mt-[20px]">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="w-full h-auto lg:w-[300px] lg:h-auto rounded-[20px] border-4 border-green-200 p-6 flex flex-col items-center relative overflow-hidden">
+        <div class="absolute w-[60px] h-[120px] bg-green-200 top-[-40px] left-[-10px] rotate-45"></div>
+        <i class="fa-solid fa-star absolute text-[1.5rem] text-yellow-300 top-2 left-2"></i>
+
+        <h3 class="text-center text-[2rem] font-dancing_script font-bold mt-4">Brilliant</h3>
+        <p class="text-center font-patrick_hand text-gray-600 mt-2"><span class="font-bold">$5</span> / month per use</p>
+
+        <button class="mt-6 border-2 border-gray-200 rounded-full py-2 px-4 text-color2 font-patrick_hand font-semibold">
+          Free 30 days trial
+        </button>
+
+        <div class="flex items-center gap-3 mt-6 w-full">
+          <i class="fa-solid fa-angle-right text-color1"></i>
+          <p>Full access to personalized nutrition plans</p>
+        </div>
+        <div class="flex items-center gap-3 mt-4 w-full">
+          <i class="fa-solid fa-angle-right text-color1"></i>
+          <p>Unlimited meal suggestions</p>
+        </div>
+        <div class="flex items-center gap-3 mt-4 w-full">
+          <i class="fa-solid fa-angle-right text-color1"></i>
+          <p>24/7 email support</p>
+        </div>
+        <div class="flex items-center gap-3 mt-4 w-full">
+          <i class="fa-solid fa-angle-right text-color1"></i>
+          <p>Weekly check-ins</p>
+        </div>
+
+        <button class="w-[150px] bg-gray-500 text-white px-4 py-2 rounded rounded-br-3xl hover:scale-110  transition-transform duration-30 cursor-pointer font-patrick_hand mt-[20px]">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="w-full h-auto lg:w-[300px] lg:h-auto rounded-[20px]  p-6 flex flex-col items-center shadow-custom-light">
+        <h3 class="text-center text-[2rem] font-dancing_script font-bold mt-4">Basic</h3>
+        <p class="text-center font-patrick_hand text-gray-600 mt-2"><span class="font-bold">$0</span> / month per use</p>
+
+        <button class="mt-6 border-2 border-gray-200 rounded-full py-2 px-4 text-color2 font-patrick_hand font-semibold ">
+          Totally Free
+        </button>
+
+        <div class="flex items-center gap-3 mt-6 w-full">
+          <i class="fa-solid fa-angle-right text-color1"></i>
+          <p>Access to essential nutrition tips</p>
+        </div>
+        <div class="flex items-center gap-3 mt-4 w-full">
+          <i class="fa-solid fa-angle-right text-color1"></i>
+          <p>Limited meal suggestions</p>
+        </div>
+        <div class="flex items-center gap-3 mt-4 w-full">
+          <i class="fa-solid fa-angle-right text-color1"></i>
+          <p>No personalized support</p>
+        </div>
+
+        <button class="w-[150px] bg-gray-500 text-white px-4 py-2 rounded rounded-br-3xl hover:scale-110  transition-transform duration-30 cursor-pointer font-patrick_hand mt-[20px]">
+          Get Started
+        </button>
+      </div>
+    </div>
+</section>
+
+<!--Reviews Sections-->
+
+<section class="w-full min-h-screen mt-[50px]" id="reviews">
+  <div class="w-full lg:w-[90%] h-auto flex flex-col justify-center bg-green-100 mx-auto rounded-[10px] p-4">
+    
+    <!-- Reviews Title -->
+    <div class="w-full h-auto p-4 flex flex-col lg:flex-row gap-4 items-center justify-center">
+      <img src="./assets/google_Icon.png" alt="Google Icon" class="w-[40px] lg:w-[50px]"> <!--Google Icon-->
+      <p class="text-2xl lg:text-[2.5rem] font-dancing_script  text-gray-800 ">Reviews</p>
+    </div>
+
+    <!-- Rating -->
+    <div class="w-full h-auto p-4 flex flex-col sm:flex-row gap-4 items-center justify-center">
+      <p class="font-bold text-lg lg:text-xl font-dancing_script">4.8</p>
+      <div class="flex text-yellow-400">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <p class="text-gray-400 text-sm lg:text-base font-dancing_script">1930 reviews</p>
+    </div>
+
+    <!-- Reviews Cards -->
+    <div class="flex flex-col lg:flex-row justify-evenly mt-8 gap-6 lg:gap-0 items-center">
+
+      <!-- Review 1 -->
+      <div class="w-full max-w-sm h-auto lg:h-[300px] bg-white rounded-[10px] shadow-lg p-4">
+        <div class="flex items-center gap-4">
+          <img src="./assets/person1.png" alt="Person Icon" class="w-[50px]"> <!-- Person Image -->
+          <p class="text-lg font-semibold font-dancing_script">Jane M.</p>
+        </div>
+
+        <div class="text-yellow-400 mt-4 flex">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="text-gray-600 mt-4 font-patrick_hand">"The nutrition plans are exactly what I needed! The layout of the site is super easy to navigate, and I love how the information is tailored to my specific needs. The meal suggestions have been a game-changer for my routine!"</p>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="w-full max-w-sm h-auto lg:h-[300px] bg-white rounded-[10px] shadow-lg p-4">
+        <div class="flex items-center gap-4">
+          <img src="./assets/person2.webp" alt="Person Icon" class="w-[50px]"> <!-- Person Image -->
+          <p class="text-lg font-semibold font-dancing_script">Mark T.</p>
+        </div>
+
+        <div class="text-yellow-400 mt-4 flex">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="text-gray-600 font-patrick_hand mt-4">"I tried the 30-day trial, and I'm hooked! The personalized plans are amazing, and I've already started seeing results. The site is clean, responsive, and makes healthy eating feel less overwhelming."</p>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="w-full max-w-sm h-auto lg:h-[300px] bg-white rounded-[10px] shadow-lg p-4">
+        <div class="flex items-center gap-4">
+          <img src="./assets/person3.webp" alt="Person Icon" class="w-[50px]"> <!-- Person Image -->
+          <p class="text-lg font-semibold font-dancing_script">Sarah L.</p>
+        </div>
+
+        <div class="text-yellow-400 mt-4 flex">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="text-gray-600 mt-4 font-patrick_hand">"This landing page is fantastic! I've been using the free plan, and it's a great resource for basic nutrition tips. The simplicity and design are perfect, and I'm considering upgrading to the full version soon."</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--Decoration-->
+
+<div class="w-full h-[100px] mt-[50px]  mb-[100px] ">
+  <img src="./assets/decoration_Image.png" alt="Decoration Image" class="w-[100px] mx-auto">
+</div>
+
+  <!--FAQ Section-->
+
+  <section class="max-w-2xl mx-auto p-6 mb-[50px]" id="faq">
+    <h2 class="text-[3rem]  text-center text-gray-800 mb-[50px]  font-dancing_script font-bold ">Frequently Asked Questions</h2> <!--Title-->
+
+    <div class="space-y-4 font-patrick_hand">
+
+     <!-- Question 1 -->
+     <div class="faq-item shadow-custom-light rounded-lg p-4 cursor-pointer">
+      <div class="faq-question flex justify-between items-center w-full font-semibold text-gray-700">
+        <span>What makes your nutrition plans different from others?</span>
+        <i class="fa-solid fa-chevron-down transition-transform duration-300 text-color1"></i>
+      </div>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+        <p class="mt-2 text-gray-600">Our nutrition plans are personalized based on your individual needs, dietary preferences, and lifestyle. We focus on sustainable habits rather than short-term solutions.</p>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="faq-item shadow-custom-light rounded-lg p-4 cursor-pointer">
+      <div class="faq-question flex justify-between items-center w-full font-semibold text-gray-700">
+        <span>Are your meal plans suitable for vegetarians or vegans?</span>
+        <i class="fa-solid fa-chevron-down transition-transform duration-300 text-color1"></i>
+      </div>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+        <p class="mt-2 text-gray-600">Yes! We offer customized meal plans that cater to vegetarian, vegan, gluten-free, and other dietary preferences.</p>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="faq-item shadow-custom-light rounded-lg p-4 cursor-pointer">
+      <div class="faq-question flex justify-between items-center w-full font-semibold text-gray-700">
+        <span>How long does it take to see results with your nutrition plan?</span>
+        <i class="fa-solid fa-chevron-down transition-transform duration-300 text-color1"></i>
+      </div>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+        <p class="mt-2 text-gray-600">Results vary, but most clients start seeing improvements within a few weeks, especially when following the plan consistently along with an active lifestyle.</p>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="faq-item shadow-custom-light rounded-lg p-4 cursor-pointer">
+      <div class="faq-question flex justify-between items-center w-full font-semibold text-gray-700">
+        <span>Do I need to count calories while following your plan?</span>
+        <i class="fa-solid fa-chevron-down transition-transform duration-300 text-color1"></i>
+      </div>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+        <p class="mt-2 text-gray-600">No, our focus is on nutrient-dense foods and mindful eating rather than strict calorie counting. We guide you on portion control in a way that feels natural.</p>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="faq-item shadow-custom-light rounded-lg p-4 cursor-pointer">
+      <div class="faq-question flex justify-between items-center w-full font-semibold text-gray-700">
+        <span>Is there support if I have questions after starting the plan?</span>
+        <i class="fa-solid fa-chevron-down transition-transform duration-300 text-color1"></i>
+      </div>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+        <p class="mt-2 text-gray-600">Absolutely! We offer continuous support through email or chat to ensure you stay on track and answer any questions you may have.</p>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  
+ <!--Contact Section-->
+
+ <section class="w-full h-auto" id="contact">
+
+  <!--Iframe Map-->
+  <iframe class="rounded-[20px] w-full h-auto lg:h-[150px]"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.589481139391!2d2.807681015356957!3d41.990078279210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba62f3c64b2c81%3A0xf45c4b7c2dc9ac58!2sEl%20Celler%20de%20Can%20Roca!5e0!3m2!1sen!2ses!4v1694637684553!5m2!1sen!2ses" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+<h2 class="text-center text-[3rem] font-dancing_script mt-[20px] mb-[20px] text-color1">Contact Us</h2> <!--Title-->
+
+<div class="flex gap-[10px] justify-center"> <!--Email-->
+ <p class="text-center text-[1.1rem] font-playfair text-color1 ">Email</p>
+ <img src="./assets/email_icon.png" alt="Email Icon" class="w-[25px]">
+</div>
+<p class="text-center text-blue-500 underline cursor-pointer mb-[20px] font-patrick_hand">FitFuel@email.com</p>
+
+<div class="flex gap-[10px] justify-center "> <!--Adress-->
+ <p class="text-[1.1rem] font-playfair text-color1 ">Adress</p>
+<img src="./assets/location_icon.png" alt="Location Icon" class="w-[15px]"> <!--Location Icon-->
+</div>
+<p class="text-center italic font-patrick_hand mb-[20px] text-color1 ">1327 Willowbrook Lane</p>
+
+<div class="flex justify-center gap-[10px]"> <!--Social Icons-->
+ <img src="./assets/social_Icon1.png" alt="Facebook Icon" class="w-[30px]  hover:scale-110  transition-transform duration-30 cursor-pointer"> <!--Facebook Icon-->
+ <img src="./assets/social_Icon2.png" alt="Instagram Icon" class="w-[30px]  hover:scale-110  transition-transform duration-30 cursor-pointer"> <!--Instagram Icon-->
+ <img src="./assets/social_Icon3.png" alt="Whatsapp Icon" class="w-[30px]  hover:scale-110  transition-transform duration-30 cursor-pointer"> <!--Whatsapp Icon-->
+</div>
+<hr class="w-[300px] h-[2px] bg-color1 mx-auto mt-[20px] mb-[20px] "> <!--Line-->
+ </section>
+
+   <!-- Back to Top Button -->
+   <button id="backToTopBtn" class="fixed bottom-4 right-4 p-3 bg-green-200 text-black rounded-full shadow-lg hover:bg-green-500 focus:outline-none transition-opacity opacity-0 hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+</main>
+
+<!--Footer Section-->
+
+<footer class="w-full h-auto lg:h-[200px] p-4">
+ <h2 class="text-[2rem] font-playfair font-bold text-center text-color1">Fit<span class="text-color2">Fuel</span></h2> <!--Logo-->
+
+ <div class="w-[90%] h-auto lg:h-[100px]  mx-auto content-center p-4 flex justify-around  flex-row"> <!--Links-->
+   <ul class="flex flex-col lg:flex-row lg:gap-[50px] text-[1.1rem] font-patrick_hand text-color1">
+   <a href="#services"><li>Services</li></a>
+   <a href="#about"><li>About</li></a>
+    <a href="#recipes"><li>Recipes</li></a>
+    <a href="#plans"><li>Plans</li></a>
+    <a href="#faq"><li>Faq</li></a>
+   </ul>
+
+   <ul class="flex flex-col lg:flex-row lg:gap-[50px] text-[1.1rem] font-patrick_hand text-color1"> <!--Links-->
+    <a href="#"><li>Support</li></a>
+    <a href="#"><li>Shipping</li></a>
+    <a href="#"><li>Payment</li></a>
+    <a href="#"><li>Terms Of Service</li></a>
+    <a href="#"><li>Contact</li></a>
+  </ul>
+ </div>
+
+ <hr class="w-[80%] h-[2px] bg-color1 mx-auto"> <!--Line-->
+ <h2 class="text-center mt-[10px] text-color1">FitFuel 2024 &#169; All Rights Reserved</h2> <!--Copy Right-->
+</footer>
+
+    <script type="module" src="./main.js"></script> <!--JavaScript-->
+    <script src="https://kit.fontawesome.com/1b757b43bb.js" crossorigin="anonymous"></script> <!--Font Awesome-->
+
+  </body>
+</html>
